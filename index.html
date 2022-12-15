@@ -3,7 +3,6 @@
     Sexta-feira: javascript e API;
 -->
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,10 +16,15 @@
 </head>
 <body>
     <header class="container">
-        <div class="logo">
+        <div id="logo_header">
             Shortly
         </div>
-        <nav>    
+        <div class="menu">
+            <div class="hamburger">
+
+            </div>
+        </div>
+        <nav>
             <ul>
                 <li>Vantagens</li>
                 <li>Repo</li>
@@ -31,7 +35,7 @@
             </div>
         </nav>
     </header>
-    <hr>
+    <hr id="hr_header">
     <div class="container">
         <main>
             <section id="apresentacao">
@@ -41,8 +45,10 @@
                 <div class="subtitulo">
                     Mantenha seus links organizados e fáceis de compartilhar.
                 </div>
-                <div class="btn" id="btncomecar">
-                    Começar
+                <div id="btn_comecar">
+                    <div class="btn">
+                        Começar
+                    </div>
                 </div>
             </section>
             <aside>
@@ -70,7 +76,7 @@
                         Cole a URL sem burocracias e obtenha o link encurtado na hora.
                     </p>
                 </div>
-                <span class="linha" id="linha1"></span>
+                <span class="linhas" id="linha1"></span>
                 <div class="card" id="card_two">
                     <img class="icon" src="./img/link.png"/>
                     <h3>Eficiente</h3>
@@ -79,7 +85,7 @@
                     </p>
                 </div>
 
-                <span class="linha" id="linha2"></span>
+                <span class="linhas" id="linha2"></span>
                 <div class="card" id="card_three">
                     <img class="icon" src="./img/free.png"/>
                     <h3>Grátis</h3>
@@ -101,7 +107,7 @@
     <hr>
     <footer class="container">
         <div id="footer">
-            <div class="logo" id="logo_footer">
+            <div id="logo_footer">
                 Shortly
             </div>
             <div class="social">
