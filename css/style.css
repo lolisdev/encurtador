@@ -194,6 +194,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 #painel:hover {
@@ -203,7 +204,7 @@ aside {
 
 input::placeholder {
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.61rem;
 }
 
 input[type=text] {
