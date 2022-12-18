@@ -14,6 +14,11 @@ $items.addEventListener('click', ()=>{
     $icon.classList.toggle('close_icon');
 })
 
+function erro(){
+    alert('Erro ao encurtar. Verifique a URL ou tente novamente mais tarde.');
+    $link.value = '';
+}
+
 $btn_encurtar.addEventListener('click', ()=>{
     let link = $link.value;
 
@@ -56,14 +61,16 @@ $btn_encurtar.addEventListener('click', ()=>{
                 })
                 .then(res => res.json())
                 .then(json => {
-                    $link.value = 'http://www.'+json.shortUrl
-                    $btn_encurtar.innerHTML = 'Copiar'
-                })
-                .catch(
-                    err => {
-                        alert('Erro ao encurtar. Verifique a URL ou tente novamente mais tarde.\nErro: '+ err)
+                    if(json.shortUrl.includes('undefined')){
+                      erro()
+                    }else{
+                        $link.value = 'http://www.'+json.shortUrl
+                        $btn_encurtar.innerHTML = 'Copiar'
                     }
-                )
+                })
+                .catch(() =>{
+                    erro()
+                })
             }
         }
     }
