@@ -17,7 +17,7 @@ html {
 .btn {
     width: fit-content;
     height: auto;
-    padding: 4px 16px;
+    padding: 6px 16px;
     border: 1px solid black;
     border-radius: 20px;
     background-color: deepskyblue;
@@ -144,7 +144,7 @@ section {
 }
 
 .titulo {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 900;
     text-align: center;
 }
@@ -155,7 +155,7 @@ section {
 }
 
 #btn_comecar {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #area_btn_comecar {
@@ -192,6 +192,7 @@ aside {
     width: 90%;
     height: 120px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -204,11 +205,11 @@ aside {
 
 input::placeholder {
     font-weight: bold;
-    font-size: 0.61rem;
+    font-size: 0.8rem;
 }
 
 input[type=text] {
-    width: 60%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -217,14 +218,15 @@ input[type=text] {
 }
 
 #btn_encurtar {
-    margin-left: 25px;
-    padding: 10px 20px;
+    margin-top: 4px;
 }
 
 #pergunta {
+    margin-bottom: 30px;
+    text-align: center;
     position: absolute;
     top: 92px;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 900;
 }
 
@@ -296,6 +298,8 @@ input[type=text] {
 
 #footer_generate > h1 {
     text-align: center;
+    font-size: 1.8rem;
+
 }
 
 footer {
@@ -332,6 +336,9 @@ footer > p {
     .container {
         padding: 0 60px;
     }
+    #pergunta {
+        font-size: 2.2rem;
+    }
     #pergunta_desc {
         display: inherit;
         position: absolute;
@@ -352,6 +359,19 @@ footer > p {
     }
     input::placeholder {
         font-size: inherit;
+    }
+    #painel {
+        flex-direction: row;
+    }
+    input[type=text] {
+        width: 60%;
+    }
+    #btn_encurtar {
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    #footer_generate > h1 {
+        font-size: 2.2rem;
     }
 }
 
